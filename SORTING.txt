@@ -1,26 +1,53 @@
-import java.util.Arrays;
-import java.util.Scanner;
+class GFG {
+ 
 
-public class ArraySorting {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    // Main driver method
 
-        // Get the size of the array from the user
-        System.out.print("Enter the size of the array: ");
-        int size = scanner.nextInt();
+    public static void main(String[] args)
 
-        // Create an array based on user input
-        int[] array = new int[size];
-        System.out.println("Enter the elements of the array:");
+    {
+ 
 
-        for (int i = 0; i < size; i++) {
-            array[i] = scanner.nextInt();
+        // Custom input array
+
+        int arr[] = { 4, 3, 2, 1 };
+ 
+
+        // Outer loop
+
+        for (int i = 0; i < arr.length; i++) {
+ 
+
+            // Inner nested loop pointing 1 index ahead
+
+            for (int j = i + 1; j < arr.length; j++) {
+ 
+
+                // Checking elements
+
+                int temp = 0;
+
+                if (arr[j] < arr[i]) {
+ 
+
+                    // Swapping
+
+                    temp = arr[i];
+
+                    arr[i] = arr[j];
+
+                    arr[j] = temp;
+
+                }
+
+            }
+ 
+
+            // Printing sorted array elements
+
+            System.out.print(arr[i] + " ");
+
         }
 
-        // Sort the array
-        Arrays.sort(array);
-
-        // Display the sorted array
-        System.out.println("Sorted array: " + Arrays.toString(array));
     }
 }
