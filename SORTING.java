@@ -1,4 +1,4 @@
-class GFG {
+class Sorting {
  
 
     // Main driver method
