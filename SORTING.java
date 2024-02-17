@@ -10,7 +10,7 @@ class Sorting {
 
         // Custom input array
 
-        int arr[] = { 4, 3, 2, 1 };
+        int arr[] = { 15,23,17,5 };
  
 
         // Outer loop
